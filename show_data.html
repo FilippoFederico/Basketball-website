@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Feedback Sent</title>
+    <link rel="stylesheet" type="text/css" href="basket.css" />
+</head>
+
+<body>
+    <div id="behind">
+        <div id="title">
+            <h1>Basketball website</h1>
+        </div>
+
+        <div class="main_f">
+
+            <div class="menu_flex">
+
+                <a class="button_flex" href="home_basket.html">home</a>
+                <a class="button_flex" href="about_basket.html">about</a>
+                <a class="button_flex" href="#">rules</a>
+                <a class="button_flex" href="game_info.html">game info</a>
+                <a class="button_flex" href="contact_basket.html">contact</a>
+
+            </div>
+
+        </div>
+            
+        <div class="flex_box box_rules">
+           <div class="title_contact title_data">
+                <span class="text_span_form title_data">data informations</span>
+            </div>
+            
+            
+            <table border=solid align=center width="500">
+                <tr class="dat">
+                    <th align="center">Form Field</th>
+                    <th align="center">Field Value</th>
+                </tr>
+
+                <script language="javascript">
+                    var args = location.search.substr(1).split('&');
+                    for (var i = 0; i < args.length; ++i) {
+                        var parts = args[i].split('=');
+                        if (parts != null) {
+                            var field = parts[0];
+                            var value = parts[1];
+                            if (value == null) {
+                                value = "null"
+                            } else {
+                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                            }
+
+                            document.writeln('<tr ><td align="center">' + field + '</td>');
+                            document.writeln('<td align="center">' + value + '</td></tr>');
+                        }
+                    }
+                </script>
+
+                <noscript>
+                    <tr>
+                        <td class="dat">
+                            <p>You need to turn on Javascript in your browser.</p>
+
+                            <p>In Microsoft Internet Explorer 4 or greater:</p>
+                            <ul>
+                                <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                                <li>Click on the "Security" tab.</li>
+                                <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                                    and then click on "Settings...".)</li>
+                                <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                            </ul>
+
+                            <p>In Netscape version 4 or greater:</p>
+                            <ul>
+                                <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                                <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                                <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                                <li>Click the <b>OK</b> button.</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </noscript>
+
+            </table>
+        </div>
+
+        <div class="social_icons_data">
+            <a href="https://it-it.facebook.com/" class="link_fb" target="_blank">
+                <img src="facebook_circle-512.png" alt="Facebook" class="icon_fb">
+            </a>
+            <a href="https://www.instagram.com/?hl=it" class="link_ig" target="_blank">
+                <img src="social-instagram-new-circle-512.png" alt="Instagram" class="icon_ig">
+            </a>
+
+            <a href="https://www.youtube.com/?hl=it" class="link_yt" target="_blank">
+                <img src="2018_social_media_popular_app_logo_youtube-512.png" alt="Youtube" class="icon_yt">
+            </a>
+
+            <a href="https://it.linkedin.com/" class="link_in" target="_blank">
+                <img src="social-linkedin-circle-512.png" alt="Linkedin" class="icon_in">
+            </a>
+        </div>
+
+    </div>
+</body></html>
+
